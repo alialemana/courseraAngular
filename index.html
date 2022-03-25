@@ -1,9 +1,27 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Hello Coursera</title>
+        <script src="app.js"></script>
+        <style>body {font-size: 1.5em; }</style>
+        <title>Single Page Web Applications with AngularJS</title>
     </head>
     <body>
-        <h1>hellocoursera juhu</h1>
+        <h1>Low Cohesion and Tight Coupling</h1>
+        <div id="nameCalculator">
+        <div>
+            Your name: <input type="text" id="name"><!--input tag-->
+        </div>
+        <div id="output"></div>
+        </div>
+        <!--um zu erklären, was angular eigentlich macht und wie die magic funktioniert-->
+        <script>
+            var elem = document.getElementById('target');
+            console.log(elem);
+            console.log(elem.getAttribute('ng-app'));
+        
+            var elem2 = document.querySelector("[ng-app]");
+            console.log(elem2);
+            console.log(elem2.getAttribute('ng-app'));
+        </script>
     </body>
 </html>
